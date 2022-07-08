@@ -6,3 +6,10 @@ test('renders learn react link', () => {
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+test.skip('task added to array', () => {
+   let task = "new task" ;
+   let tasksArray = [a,b,c,d,] ;
+   const newArray = addTask(task) ;
+   expect(newArray[{newArray.length -1}]).toEqual(task) ;
+})

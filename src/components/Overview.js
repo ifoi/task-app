@@ -2,9 +2,18 @@
 
 import React from 'react';
 
-function Overview(props) {
+function Overview({tasks}) {
 
-    return <div> show overview</div>
+    const taskItems = tasks.map((task) =>
+          <li key = {tasks.indexOf(task)}>
+             {task}
+             </li>
+     );
+
+    return ( <div>
+         <ul>{taskItems} </ul>
+    </div> 
+    );
 } 
 
 
